@@ -1,8 +1,21 @@
-# mk語法-git
+# mk語法-git寫法
+
+* 標題 h1~h6
+* 粗斜體
+* ul>li
+* 引用圖片
+* 引用網址
+* 引述別人論點
+* 小區塊-HightLight 提示 高亮
+* 大區塊-程式碼
+* checkbox 打勾勾
+* table 欄位
+* 
+
 
 凡#標號後空格，才會顯現，且單行控制
 
-#是H1，##是h2...######是h6
+#是H1，##是h2，###是h3，####是h4，#####是h5，######是h6
 
 
 
@@ -81,13 +94,3 @@ First Header | Second Header
 ------------ | -------------
 Content from cell 1 | Content from cell 2
 Content in the first column | Content in the second column
-
-
-16c999e8c71134401a78d4d46435517b2271d6ac
-mojombo@16c999e8c71134401a78d4d46435517b2271d6ac
-mojombo/github-flavored-markdown@16c999e8c71134401a78d4d46435517b2271d6ac
-
-
-#1
-mojombo#1
-mojombo/github-flavored-markdown#1
