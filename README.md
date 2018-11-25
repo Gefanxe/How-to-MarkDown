@@ -2,7 +2,7 @@
 
 目錄
 * 標題-h1~h6
-* 強調-粗斜體
+* 強調-粗斜體、劃線
 * 清單-ul>li、 ol<li
 * 引用圖片
 * 引用網址連結
@@ -55,8 +55,12 @@ __前後各加 2 個底線__
 **這是範例**
 __這是範例__
 
-
 ```
+劃線
+~~前後各加 2 個波浪~~
+```
+~~這是範例~~
+
 粗斜體混搭
 _你**可以**試著混搭_
 ```
@@ -77,7 +81,7 @@ _**清單 採用 前 標點符號**_
 
 依順序，實心圓、空心圓、實心方
 ```
-* 範例 1 前面加個米字號
+* 範例 1 前面加個米字號或是 槓 -
 * 範例 2
   * 範例 2a
   * 範例 2b
@@ -134,47 +138,105 @@ _**清單 採用 前 標點符號**_
 3. 範例1
 3. 範例2
 
+
 ## 引用圖片
 
-![GitHub Logo](/images/logo.png)
-Format: ![Alt Text](url)
+公式：!+[]+()
+
+替代文字：圖片連結未顯現時，所出現的畫面會改用文字
+```
+![替代文字](連結)
+```
+![範例](http://pluspng.com/img-png/free-tag-png-free-256.png)
+
+![連結失敗範例](/images/logo.png)
 
 
-http://github.com - automatic!
-[GitHub](http://github.com)
+## 引用網址連結
 
+公式1： 直接上網址，前後空格
+公式2：[]+()
+```
+1.
+http://github.com
 
-As Kanye West said:
-
-> We're living the future so
-> the present is our past.
-
-I think you should use an
-`<addr>` element here instead.
-
-
-```javascript
-function fancyAlert(arg) {
-  if(arg) {
-    $.facebox({div:'#foo'})
-  }
-}
+2.
+[顯現文字](網址)
+[範例](http://github.com)
 ```
 
+文字文字 http://github.com 文字文字
+
+[範例](http://github.com)
+
+
+## 引述別人論點
+
+_**清單 採用 前 標點符號**_
+
+前面加1個 大於符號，加空格，其實很多地方可以看出來MarkDown寫起來很直覺，這個寫法又更加明顯。
+
+要注意的是，如果引用兩人的論述，記得不要直接按下enter劃到下一行，要在空一行，也就是enter兩次
+
+```
+> 這裡可以寫敘述
+       // 空行
+> 然後下一行也需要再加 大於 標點符號
+```
+> 第一行 範例
+
+> 第二行 範例
+
+
+## 小區塊-HightLight 提示 高亮
+
+公式：前後加 反引號 `
+
+這邊就有個小問題了，對於打注音的使用者，通常打出反引號時，需要特別注意，按下反引號後，立即按下enter，不然接下來會出現"非正式"的英文。
+```
+`範例1`
+`<範例2>`
+```
+`範例1`
+`<範例2>`
+
+
+## 大區塊-程式碼
+
+公式1： 前後加 三個反引號```
+公式2：4個空個，然後，直接上function
+
+此為大區塊，適合寫下程式碼，沒人想用純文字寫下程式碼吧!?
+
+```
+
+ ```程式語言 // 直接3個反引號+內容要呈現的語言 (可選)
+內容內容內容
+ ``` // 最後再以3個反引號收尾
+ 
+```
+```
+內容內容內容
+``` 
+
+
+```
 
     function fancyAlert(arg) {
       if(arg) {
         $.facebox({div:'#foo'})
       }
     }
+ 
+```
+    function fancyAlert(arg) {
+      if(arg) {
+        $.facebox({div:'#foo'})
+      }
+    }
     
-    
-    
-def foo():
-    if not bar:
-        return True
 
-
+## checkbox 打勾勾
 
 - [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
 - [x] list syntax required (any unordered or ordered list supported)
@@ -182,6 +244,7 @@ def foo():
 - [ ] this is an incomplete item
 
 
+## table 欄位
 
 First Header | Second Header
 ------------ | -------------
